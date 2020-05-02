@@ -39,7 +39,7 @@ if (addMode) {
     id: getRandomInt(1000),
   })
 
-  person.save().then(response => {
+  person.save().then(() => {
     console.log(`added ${name} number ${number} to phonebook`)
     mongoose.connection.close()
   })
